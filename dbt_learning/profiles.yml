@@ -1,0 +1,10 @@
+dbt_learning:
+  outputs:
+    dev:
+      catalog: dbt_tutorail_dev
+      host: dbc-c36c04fd-e11a.cloud.databricks.com
+      http_path: /sql/1.0/warehouses/28e7b89c82b33d30
+      schema: default
+      threads: 1 
+      type: databricks
+  target: dev

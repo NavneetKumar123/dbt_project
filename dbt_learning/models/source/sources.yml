@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: source  # Source system name
+    database: dbt_tutorail_dev      # Optional: database where source is stored
+    schema: source  # Schema containing the source tables
+    tables:
+      - name: fact_sales   # Table name as it exists in the database
+      - name: fact_returns
+      - name: dim_date
+      - name: dim_store
+      - name: dim_product
+      - name: dim_customer
